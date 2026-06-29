@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智学在线 - 让学习更高效</title>
+    <meta name="description" content="智学在线是专业的在线教育平台，提供K12辅导、职业培训、兴趣学习等优质课程，名师授课，助力每一位学员成长。">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- 顶部导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>智学在线</span>
+            </div>
+            <ul class="navbar-nav" id="navbarNav">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#courses">课程中心</a></li>
+                <li><a href="#teachers">名师团队</a></li>
+                <li><a href="#reviews">学员评价</a></li>
+                <li><a href="#news">资讯动态</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="btn btn-secondary">登录</button>
+                <button class="btn btn-primary">免费试学</button>
+            </div>
+            <button class="navbar-toggle" id="navbarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero区 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">开启你的学习之旅</h1>
+                <p class="hero-subtitle">10万+学员的选择，专业名师在线授课，随时随地高效学习</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100000">0</span>
+                        <span class="stat-label">学员</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">课程</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="200">0</span>
+                        <span class="stat-label">名师</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-label">好评率%</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg">立即报名</button>
+                    <button class="btn btn-outline btn-lg">了解更多</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20online%20education%20concept%20with%20students%20learning%20on%20laptops%20and%20tablets%2C%20bright%20blue%20and%20green%20gradient%20background%2C%20minimalist%20style&image_size=landscape_16_9" alt="在线学习">
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,117.3C672,107,768,117,864,138.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 课程中心 -->
+    <section id="courses" class="courses section">
+        <div class="container">
+            <div class="section-header">
+                <h2>热门课程</h2>
+                <p>精选优质课程，涵盖多个领域，满足你的学习需求</p>
+            </div>
+            
+            <!-- 课程分类Tab -->
+            <div class="course-tabs">
+                <button class="tab-btn active" data-category="all">全部</button>
+                <button class="tab-btn" data-category="k12">K12教育</button>
+                <button class="tab-btn" data-category="vocational">职业培训</button>
+                <button class="tab-btn" data-category="interest">兴趣学习</button>
+            </div>
+            
+            <!-- 课程卡片网格 -->
+            <div class="course-grid" id="courseGrid">
+                <div class="course-card" data-category="k12">
+                    <div class="course-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mathematics%20learning%20for%20students%2C%20calculus%20formulas%20on%20whiteboard%2C%20bright%20classroom%20atmosphere&image_size=square" alt="高中数学">
+                        <span class="course-tag tag-hot">热门</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>高中数学冲刺班</h3>
+                        <p>系统梳理知识点，掌握解题技巧，冲刺高考高分</p>
+                        <div class="course-info">
+                            <span class="course-teacher">李老师</span>
+                            <span class="course-students">2,845人学习</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">¥1,299</span>
+                            <span class="original-price">¥2,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">立即学习</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="vocational">
+                    <div class="course-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=programming%20coding%20course%2C%20developer%20writing%20code%20on%20computer%2C%20modern%20tech%20office&image_size=square" alt="Python编程">
+                        <span class="course-tag tag-new">新课</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Python全栈开发</h3>
+                        <p>从零基础到就业，系统学习Python编程与Web开发</p>
+                        <div class="course-info">
+                            <span class="course-teacher">王老师</span>
+                            <span class="course-students">1,923人学习</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">¥2,999</span>
+                            <span class="original-price">¥5,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">立即学习</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="interest">
+                    <div class="course-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=art%20painting%20class%2C%20watercolor%20artwork%2C%20creative%20studio%20with%20art%20supplies&image_size=square" alt="水彩绘画">
+                        <span class="course-tag tag-recommend">推荐</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>水彩画入门教程</h3>
+                        <p>零基础学水彩，掌握色彩搭配与绘画技巧</p>
+                        <div class="course-info">
+                            <span class="course-teacher">张老师</span>
+                            <span class="course-students">3,456人学习</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">¥699</span>
+                            <span class="original-price">¥1,299</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">立即学习</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="k12">
+                    <div class="course-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=english%20learning%20class%2C%20language%20study%20materials%2C%20global%20education%20concept&image_size=square" alt="英语语法">
+                    </div>
+                    <div class="course-content">
+                        <h3>初中英语语法精讲</h3>
+                        <p>系统学习语法知识，提升英语综合能力</p>
+                        <div class="course-info">
+                            <span class="course-teacher">刘老师</span>
+                            <span class="course-students">4,123人学习</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">¥899</span>
+                            <span class="original-price">¥1,599</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">立即学习</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="vocational">
+                    <div class="course-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=data%20analysis%20business%20intelligence%2C%20charts%20and%20graphs%20on%20screen%2C%20professional%20office&image_size=square" alt="数据分析">
+                        <span class="course-tag tag-hot">热门</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>数据分析实战训练营</h3>
+                        <p>掌握Excel、Python数据分析，提升职场竞争力</p>
+                        <div class="course-info">
+                            <span class="course-teacher">陈老师</span>
+                            <span class="course-students">2,678人学习</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">¥1,999</span>
+                            <span class="original-price">¥3,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">立即学习</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="interest">
+                    <div class="course-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=music%20piano%20learning%2C%20keyboard%20instrument%2C%20elegant%20music%20room&image_size=square" alt="钢琴入门">
+                    </div>
+                    <div class="course-content">
+                        <h3>钢琴零基础入门</h3>
+                        <p>从识谱开始，轻松掌握钢琴演奏技巧</p>
+                        <div class="course-info">
+                            <span class="course-teacher">林老师</span>
+                            <span class="course-students">1,876人学习</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">¥999</span>
+                            <span class="original-price">¥1,999</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm">立即学习</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more">
+                <button class="btn btn-outline">查看全部课程</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 名师团队 -->
+    <section id="teachers" class="teachers section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>名师团队</h2>
+                <p>汇聚各领域资深专家，为您提供专业的教学服务</p>
+            </div>
+            
+            <div class="teacher-grid">
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20male%20teacher%20portrait%2C%20wearing%20glasses%2C%20friendly%20smile%2C%20formal%20attire&image_size=square" alt="李老师">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>李明辉</h3>
+                        <span class="teacher-title">高中数学特级教师</span>
+                        <p class="teacher-desc">20年教学经验，培养出数百名高考状元，擅长激发学生学习兴趣</p>
+                        <div class="teacher-tags">
+                            <span class="tag">数学</span>
+                            <span class="tag">高考</span>
+                            <span class="tag">培优</span>
+                        </div>
+                        <div class="teacher-stats">
+                            <span>教龄20年</span>
+                            <span>学员5000+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20female%20teacher%20portrait%2C%20warm%20smile%2C%20modern%20style%2C%20tech%20background&image_size=square" alt="王老师">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>王雪琴</h3>
+                        <span class="teacher-title">Python高级讲师</span>
+                        <p class="teacher-desc">前阿里巴巴技术专家，10年开发经验，授课风格生动有趣</p>
+                        <div class="teacher-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">编程</span>
+                            <span class="tag">就业</span>
+                        </div>
+                        <div class="teacher-stats">
+                            <span>教龄8年</span>
+                            <span>学员3000+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20female%20art%20teacher%20portrait%2C%20creative%20style%2C%20colorful%20background&image_size=square" alt="张老师">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>张晓婷</h3>
+                        <span class="teacher-title">水彩画艺术总监</span>
+                        <p class="teacher-desc">中央美术学院硕士，作品多次获奖，注重培养学生艺术思维</p>
+                        <div class="teacher-tags">
+                            <span class="tag">水彩</span>
+                            <span class="tag">绘画</span>
+                            <span class="tag">艺术</span>
+                        </div>
+                        <div class="teacher-stats">
+                            <span>教龄12年</span>
+                            <span>学员4000+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20male%20business%20teacher%20portrait%2C%20confident%20expression%2C%20corporate%20style&image_size=square" alt="陈老师">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>陈志远</h3>
+                        <span class="teacher-title">数据分析专家</span>
+                        <p class="teacher-desc">前字节跳动数据分析师，擅长将复杂知识简单化，实战经验丰富</p>
+                        <div class="teacher-tags">
+                            <span class="tag">数据分析</span>
+                            <span class="tag">Excel</span>
+                            <span class="tag">职场</span>
+                        </div>
+                        <div class="teacher-stats">
+                            <span>教龄6年</span>
+                            <span>学员2500+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学员评价 -->
+    <section id="reviews" class="reviews section">
+        <div class="container">
+            <div class="section-header">
+                <h2>学员评价</h2>
+                <p>真实学员反馈，见证学习成果</p>
+            </div>
+            
+            <div class="review-carousel" id="reviewCarousel">
+                <div class="review-track" id="reviewTrack">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-content">"在智学在线学习了三个月，数学成绩从90分提升到130分，李老师的讲解非常清晰，解题技巧很实用！"</p>
+                        <div class="review-author">
+                            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=young%20student%20portrait%2C%20smiling%2C%20casual%20clothes%2C%20school%20background&image_size=square" alt="张同学">
+                            <div>
+                                <span class="author-name">张同学</span>
+                                <span class="author-course">高中数学冲刺班</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-content">"零基础学Python，王老师讲得很透彻，现在已经能独立开发项目了，成功转行程序员！"</p>
+                        <div class="review-author">
+                            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=young%20professional%20male%20portrait%2C%20confident%2C%20business%20casual&image_size=square" alt="李同学">
+                            <div>
+                                <span class="author-name">李先生</span>
+                                <span class="author-course">Python全栈开发</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-content">"水彩画课程非常棒，张老师很有耐心，每一步都讲得很详细，现在已经能画出漂亮的作品了！"</p>
+                        <div class="review-author">
+                            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=young%20female%20portrait%2C%20creative%20style%2C%20artistic%20background&image_size=square" alt="王同学">
+                            <div>
+                                <span class="author-name">王同学</span>
+                                <span class="author-course">水彩画入门教程</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-content">"数据分析课程内容很实用，陈老师结合实际案例讲解，学完就能用到工作中，升职加薪指日可待！"</p>
+                        <div class="review-author">
+                            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20female%20portrait%2C%20office%20background%2C%20business%20attire&image_size=square" alt="赵同学">
+                            <div>
+                                <span class="author-name">赵女士</span>
+                                <span class="author-course">数据分析实战训练营</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn prev" id="prevReview">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="nextReview">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="review-dots" id="reviewDots"></div>
+        </div>
+    </section>
+
+    <!-- 在线报名 -->
+    <section id="contact" class="contact section bg-gradient">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>立即报名，开启学习之旅</h2>
+                    <p>填写以下信息，我们的课程顾问将在24小时内与您联系</p>
+                    <div class="contact-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>免费试学7天</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>不满意全额退款</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>专属学习顾问</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>姓名</label>
+                            <input type="text" id="name" placeholder="请输入您的姓名">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>手机号</label>
+                            <input type="tel" id="phone" placeholder="请输入您的手机号">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>意向课程</label>
+                            <select id="course">
+                                <option value="">请选择意向课程</option>
+                                <option value="k12">K12教育</option>
+                                <option value="vocational">职业培训</option>
+                                <option value="interest">兴趣学习</option>
+                            </select>
+                            <span class="error-message" id="courseError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>留言</label>
+                            <textarea id="message" placeholder="请输入您的需求或问题"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">提交报名</button>
+                        <p class="form-tip">提交即表示同意《用户服务协议》和《隐私政策》</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 资讯动态 -->
+    <section id="news" class="news section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>资讯动态</h2>
+                <p>最新教育资讯、学习技巧、行业动态</p>
+            </div>
+            
+            <div class="news-grid">
+                <div class="news-card featured">
+                    <div class="news-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=education%20technology%20innovation%2C%20modern%20classroom%20with%20digital%20devices%2C%20futuristic%20style&image_size=landscape_16_9" alt="教育科技">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">行业动态</span>
+                        <h3>2024年在线教育行业发展趋势分析</h3>
+                        <p>随着科技的快速发展，在线教育行业迎来新的机遇。本文将深入分析2024年在线教育的发展趋势...</p>
+                        <div class="news-meta">
+                            <span class="news-date">2024-01-15</span>
+                            <span class="news-read">阅读量 12,345</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=student%20exam%20preparation%2C%20study%20materials%2C%20concentrated%20learning&image_size=landscape_4_3" alt="备考技巧">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">学习技巧</span>
+                        <h3>高考数学备考攻略：高效提分技巧</h3>
+                        <p>距离高考还有100天，掌握这些提分技巧，让你的数学成绩更上一层楼...</p>
+                        <div class="news-meta">
+                            <span class="news-date">2024-01-12</span>
+                            <span class="news-read">阅读量 8,765</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=remote%20work%20programming%2C%20developer%20working%20from%20home%2C%20comfortable%20environment&image_size=landscape_4_3" alt="编程学习">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">技术分享</span>
+                        <h3>零基础学编程：如何选择适合自己的编程语言</h3>
+                        <p>想要学习编程但不知道从哪里开始？本文将帮助你选择最适合的编程语言...</p>
+                        <div class="news-meta">
+                            <span class="news-date">2024-01-10</span>
+                            <span class="news-read">阅读量 6,543</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=creative%20art%20education%2C%20students%20doing%20art%20project%2C%20colorful%20classroom&image_size=landscape_4_3" alt="艺术教育">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">艺术教育</span>
+                        <h3>艺术教育对孩子成长的重要性</h3>
+                        <p>艺术教育不仅能培养孩子的创造力，还能促进全面发展，家长们一定要重视...</p>
+                        <div class="news-meta">
+                            <span class="news-date">2024-01-08</span>
+                            <span class="news-read">阅读量 5,432</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=data%20visualization%20charts%2C%20business%20analytics%2C%20professional%20presentation&image_size=landscape_4_3" alt="数据分析">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">职场技能</span>
+                        <h3>数据分析能力：职场必备的核心竞争力</h3>
+                        <p>在大数据时代，数据分析能力越来越重要，掌握这项技能将让你在职场中脱颖而出...</p>
+                        <div class="news-meta">
+                            <span class="news-date">2024-01-05</span>
+                            <span class="news-read">阅读量 4,321</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more">
+                <button class="btn btn-outline">查看全部资讯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部信息 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>智学在线</span>
+                    <p>让学习更高效，让成长更简单</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>课程中心</h4>
+                    <ul>
+                        <li><a href="#">K12教育</a></li>
+                        <li><a href="#">职业培训</a></li>
+                        <li><a href="#">兴趣学习</a></li>
+                        <li><a href="#">企业培训</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">公司介绍</a></li>
+                        <li><a href="#">名师团队</a></li>
+                        <li><a href="#">学员评价</a></li>
+                        <li><a href="#">合作伙伴</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>帮助支持</h4>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">学习指南</a></li>
+                        <li><a href="#">退款政策</a></li>
+                        <li><a href="#">联系客服</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>400-888-8888</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@zhixue.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>北京市朝阳区科技园区</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Copyright 2024 智学在线 版权所有 | 京ICP备12345678号-1</p>
+                <div class="footer-terms">
+                    <a href="#">用户协议</a>
+                    <a href="#">隐私政策</a>
+                    <a href="#">网站地图</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
